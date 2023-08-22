@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* defined root variable */
+:root {
+  --blue: #fff3da;
+  --white: #dfccfb;
+  --darkPurple: #d0bfff;
+  --darkerPurple: #9075f3;
+}
+
+/* html element styling */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkPurple);
+  align-items: center;
+  height: 8rem;
+  width: 100%;
+  color: var(--blue);
+}
+
+header p {
+  font-size: 4em;
+  margin: 1em;
+}
+
+header span {
+  color: var(--darkerPurple);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+a {
+  margin: 0px 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+h3 {
+  color: var(--blue);
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://source.unsplash.com/random/?Coding');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+}
+
+.vision,
+.about {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem;
+  gap: 10px;
+  color: #845959;
+}
+
+.vision h3,
+.about h3 {
+  text-align: center;
+  font-size: 3rem;
+}
+.vision p,
+.about p {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  word-spacing: 4px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--darkPurple);
+  align-items: center;
+  height: 8rem;
+  width: 100%;
+  color: var(--blue);
+}
+
+.contact {
+  background-color: var(--blue);
+  padding: 10rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--darkerPurple);
+}
+
+form {
+  padding: 2rem;
+  /* background-color: var(--darkerPurple); */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  outline: none;
+  border-radius: 25px;
+  border: none;
+}
+textarea {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1rem;
+  outline: none;
+   border: none;
+  border-radius: 25px;
+}

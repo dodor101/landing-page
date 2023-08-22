@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coding Class</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- create a header with a navigation bar and a logo -->
@@ -13,43 +20,66 @@
       </div>
       <div>
         <nav>
-          <li><a href="">Vision</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">About</a></li>
+          <a href="#vison">Vision</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
         </nav>
       </div>
-      <nav></nav>
     </header>
 
     <main>
       <section>
-        <div>
-          <p>The future is in your hand</p>
-        </div>
-        <div>
-          <div>
-            <img src="https://source.unsplash.com/random/?Coding/200x200" alt="Coding" />
+        <div class="hero-image">
+          <div class="hero-text">
+            <h3>Hope is Alive</h3>
+            <p>You can Learn Coding today</p>
           </div>
         </div>
       </section>
-      <section>
-        <h3>Vision</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt aut cum officiis aspernatur tempora illo
-          adipisci sapiente. Atque praesentium commodi animi eos ullam delectus esse ab totam. Voluptatibus provident
-          consectetur nisi maiores exercitationem nemo et officiis fugit accusamus omnis vitae vel similique error
-          obcaecati cumque dolores, quisquam quia, nihil libero.
-        </p>
+      <section class="vision" id="vision">
+        <div>
+          <h3>Vision</h3>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt aut cum officiis aspernatur tempora illo
+            adipisci sapiente. Atque praesentium commodi animi eos ullam delectus esse ab totam. Voluptatibus provident
+            consectetur nisi maiores exercitationem nemo et officiis fugit accusamus omnis vitae vel similique error
+            obcaecati cumque dolores, quisquam quia, nihil libero.
+          </p>
+        </div>
       </section>
-
-      <section>
+      <section class="about" id='about'>
         <h3>About us</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo repellendus nemo fugiat, voluptate ex ratione
-          tenetur nulla libero labore laborum harum beatae hic voluptatum laudantium officia. Error aut, odio vel enim
-          fugit cum assumenda expedita, quas dolores voluptates ex! Mollitia at veritatis perspiciatis reprehenderit
-          sequi culpa excepturi earum fugit odit!
-        </p>
+        <div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo repellendus nemo fugiat, voluptate ex ratione
+            tenetur nulla libero labore laborum harum beatae hic voluptatum laudantium officia. Error aut, odio vel enim
+            fugit cum assumenda expedita, quas dolores voluptates ex! Mollitia at veritatis perspiciatis reprehenderit
+            sequi culpa excepturi earum fugit odit!
+          </p>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div>
+          <h4>Contact</h4>
+        </div>
+        <div>
+          <form action="">
+            <div>
+              <input type="text" placeholder="Name" autofocus/>
+            </div>
+            <div>
+              <input type="text" placeholder="Email" />
+            </div>
+            <div>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+            <div>
+              <input type="button" value="Submit" />
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer>Coding class Copyright © 2023 Coding class - All rights reserved || Designed By: Duckenson Dodor</footer>
