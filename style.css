@@ -27,6 +27,7 @@ header {
   height: 8rem;
   width: 100%;
   color: var(--lightYellow);
+  position: fixed;
 }
 
 header p {
@@ -41,7 +42,7 @@ header span {
 header nav {
   display: flex;
   justify-content: space-between;
-  padding: 0px 30px;
+  padding: 0px 40px;
 }
 
 a {
@@ -50,7 +51,6 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -82,6 +82,9 @@ a {
   padding: 8rem;
   gap: 10px;
   color: #845959;
+  box-shadow: 1px 8px 15px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 8px 15px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 8px 15px -2px rgba(0, 0, 0, 0.75);
 }
 
 .vision h3,
@@ -95,6 +98,11 @@ a {
   letter-spacing: 1px;
   font-size: 2rem;
   word-spacing: 4px;
+  box-shadow: 0.1px 2px 5px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 2px 5px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 5px -2px rgba(0, 0, 0, 0.75);
+  border-radius: 25px;
+  padding: 2rem;
 }
 
 footer {
@@ -143,7 +151,6 @@ textarea {
   border-radius: 25px;
 }
 
-
 /* hover effect */
 
 .button:hover {
@@ -181,25 +188,24 @@ textarea {
     position: fixed;
   }
   .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('https://source.unsplash.com/random/?Coding');
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: -1;
-}
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2rem;
-}
-
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('https://source.unsplash.com/random/?Coding');
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+  }
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width: 600px) {
