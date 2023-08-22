@@ -11,6 +11,9 @@
 - HTML
 - CSS
 
+## Demo Gif
+![Demo](./assets/images/demogif.gif)
+
 ## Credit
 
 ### Duckenson Dodor

@@ -215,6 +215,7 @@ textarea {
     font-size: 2rem;
     word-spacing: 4px;
     width: 80%;
+    margin: auto;
   }
   form {
     padding: 2rem;
