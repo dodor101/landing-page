@@ -11,7 +11,7 @@ body {
 
 /* defined root variable */
 :root {
-  --blue: #fff3da;
+  --lightYellow: #fff3da;
   --white: #dfccfb;
   --darkPurple: #d0bfff;
   --darkerPurple: #9075f3;
@@ -26,7 +26,7 @@ header {
   align-items: center;
   height: 8rem;
   width: 100%;
-  color: var(--blue);
+  color: var(--lightYellow);
 }
 
 header p {
@@ -50,9 +50,7 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-h3 {
-  color: var(--blue);
-}
+
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -62,6 +60,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  z-index: -1;
 }
 
 .hero-text {
@@ -105,11 +104,11 @@ footer {
   align-items: center;
   height: 8rem;
   width: 100%;
-  color: var(--blue);
+  color: var(--lightYellow);
 }
 
 .contact {
-  background-color: var(--blue);
+  background-color: var(--lightYellow);
   padding: 10rem;
   text-align: center;
 }
@@ -122,7 +121,6 @@ h4 {
 
 form {
   padding: 2rem;
-  /* background-color: var(--darkerPurple); */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -141,6 +139,97 @@ textarea {
   font-size: 1.5rem;
   padding: 1rem;
   outline: none;
-   border: none;
+  border: none;
   border-radius: 25px;
+}
+
+/* Media queries */
+@media screen and (max-width: 800px) {
+  header p {
+    font-size: 2em;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 2px;
+    margin-bottom: 5px;
+  }
+  a {
+    margin: 0px 0.2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkPurple);
+    flex-direction: column;
+    align-items: center;
+    height: 8rem;
+    width: 100%;
+    color: var(--lightYellow);
+    position: fixed;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .vision h3,
+  .about h3 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .vision p,
+  .about p {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    word-spacing: 4px;
+    width: 80%;
+  }
+  form {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 3360px) {
+  form {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    margin: auto;
+  }
+
+  input {
+    width: 60%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+  }
+  textarea {
+    width: 60%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+  }
+  .vision p,
+  .about p {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    word-spacing: 4px;
+    width: 60%;
+    margin: auto;
+  }
 }
