@@ -24,10 +24,12 @@ header {
   justify-content: space-between;
   background-color: var(--darkPurple);
   align-items: center;
-  height: 8rem;
+  height: 100px;
   width: 100%;
   color: var(--lightYellow);
   position: fixed;
+  top: 0;
+  z-index: 2;
 }
 
 header p {
@@ -59,7 +61,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+   position: relative; 
   z-index: -1;
 }
 
